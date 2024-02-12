@@ -18,7 +18,7 @@
 :root{
     --primary-color:#EA625C;
     --text-color:#777;
-    --text-font:"Roboto", "Arial" sans-serif;
+    --text-font:"Roboto";
 }
 
 html{
@@ -31,6 +31,10 @@ html{
 *::before,
 *::after{
     box-sizing: inherit;
+}
+
+*:focus{
+    outline: 2px dotted var(--primary-color);
 }
 
 body{
@@ -58,6 +62,76 @@ img{
     padding-right: 50px;
     margin-right: auto;
     margin-left: auto;
+}
+
+
+/* site header */
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.sitenav {
+    margin-right: 40px;
+}
+
+.sitenav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.site-header-logo-img{
+    width: 32px;
+    height: 42px;
+    display: block;
+}
+
+.site-header-logo{
+    margin-right: auto;
+    transition: opacity .3s ease;
+}
+
+.site-header-logo:hover{
+    opacity: 0.8;
+}
+
+.site-header-logo:focus{
+    opacity: 0.6;
+}
+
+.sitenav-link{
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: border-bottom .4s ease;
+}
+
+.sitenav-link:hover{
+    opacity: 0.8;
+    border-bottom: 3px solid #333;
+}
+
+.sitenav-link:focus{
+    opacity: 0.6;
+}
+
+.search-form-input {
+    color: #666;
+    padding-bottom: 5px;
+    border: 0;
+    border-bottom: 1px solid #333;
 }
 
 .main-content{
