@@ -80,7 +80,24 @@ img{
     opacity: 0.6;
 }
 
+.lined-link {
+    display: inline-block;
+    align-items: center;
+    color: #EA625C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
+.lined-link::before{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #EA625C;
+    margin-right: 10px;
+}
 
 .container{
     width: 100%;
@@ -199,6 +216,54 @@ img{
     padding: 37px;
 }
 
+.features {
+    padding: 70px 0;
+}
+
+.features-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.features-item {
+    width: 280px;
+}
+
+.features-item:not(:last-child){
+    margin-right: 80px;
+}
+
+.features-heading {
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.features-text {
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.features-devider {
+    margin: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border: 0;
+    box-shadow: 18px 0 0 0 #ddd,
+                36px 0 0 0 #ddd;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -207,5 +272,9 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-
+.hero{
+    background-image: url(../img/apple-watch.jpg);
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 550px) bottom;
+}
 }
