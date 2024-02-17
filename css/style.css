@@ -58,6 +58,7 @@ img{
 
 .button{
     display: inline-block;
+    min-width: 260px;
     color: #fff;
     padding: 12px 38px;
     background-color: var(--primary-color);
@@ -263,6 +264,20 @@ img{
     border: 0;
     box-shadow: 18px 0 0 0 #ddd,
                 36px 0 0 0 #ddd;
+}
+
+.promo {
+    padding: 70px 0;
+}
+
+.promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+
 }
 
 @media
