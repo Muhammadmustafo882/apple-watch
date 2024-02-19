@@ -82,7 +82,7 @@ img{
 }
 
 .lined-link {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     color: #EA625C;
     font-size: 16px;
@@ -274,6 +274,29 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.runners {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    background-image: url("../img/runners.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.runners-lead-cta {
+    margin-left: auto;
+}
+
+.runners-lead-cta .lead-cta-heading{
+    color: #fff;
+}
+
+.runners-lead-cta .lead-cta-text{
+    color: #fff;
+    border-left-color: #fff;
 }
 
 @media
