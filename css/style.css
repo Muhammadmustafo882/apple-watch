@@ -229,6 +229,7 @@ img{
 
 .features-item {
     width: 280px;
+    list-style: none;
 }
 
 .features-item:not(:last-child){
